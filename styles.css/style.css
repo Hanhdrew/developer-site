@@ -293,8 +293,34 @@ nav ul {
 }
 
 .project-card {
-  flex: 1 1 200px;
+  height: 200px;
+  aspect-ratio: 16 / 9;
+  /* flex: 1 1 200px; */
   border: 1px solid green;
+  position: relative;
+}
+
+.project.card::before,
+.project-card::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: conic-gradient(
+    from 0deg at center,
+    #00c3ff,
+    #4d0199,
+    #6300c6,
+    #009dcd
+  );
+  border-radius: inherit;
+  z-index: -2;
+  padding: 2px;
+}
+
+.project-card::after {
+  z-index: 1;
+  filter: blur(10px);
 }
 
 /* contact section  */
