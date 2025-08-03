@@ -7,6 +7,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./styles.css/style.css" />
+    <link rel="stylesheet" href="./styles.css/animations.css" />
     <script
       src="https://kit.fontawesome.com/c0234f9258.js"
       crossorigin="anonymous"></script>
@@ -21,7 +22,7 @@
           <li><a href="">Projects</a></li>
           <li><a href="">Contact</a></li>
         </ul>
-        <button class="nav-btn"><i class="fa-solid fa-bars"></i></button>
+        <button id="nav-btn"><i class="fa-solid fa-bars"></i></button>
       </nav>
     </header>
 
@@ -33,8 +34,8 @@
           <p>Andrew</p>
           <h2>Fullstack Web Developer</h2>
           <div class="hero-header-btn-wrapper">
-            <button class="project-btn btn-style">Got a project?</button>
-            <button class="resume-btn btn-style">My resume</button>
+            <button id="project-btn" class="btn-style">Got a project?</button>
+            <button id="resume-btn" class="btn-style">My resume</button>
           </div>
         </div>
         <div class="hero-footer">
@@ -45,43 +46,86 @@
       </section>
 
       <section class="banner-section">
-        <div class="banner-one">
-          <p>HTML5</p>
-          <p>CSS</p>
-          <p>Javascript</p>
-          <p>Node.js</p>
-          <p>REACT</p>
-          <p>Typescript</p>
-          <p>Figma</p>
-          <p>VsCode</p>
+        <div class="language-container">
+          <div class="banner-one">
+            <p>HTML5</p>
+            <p>CSS</p>
+            <p>Javascript</p>
+            <p>Node.js</p>
+            <p>REACT</p>
+            <p>Typescript</p>
+            <p>Figma</p>
+            <p>VsCode</p>
+          </div>
+          <div class="banner-one-duplicate">
+            <p>HTML5</p>
+            <p>CSS</p>
+            <p>Javascript</p>
+            <p>Node.js</p>
+            <p>REACT</p>
+            <p>Typescript</p>
+            <p>Figma</p>
+            <p>VsCode</p>
+          </div>
         </div>
-        <div class="banner-one-duplicate">
-          <p>HTML5</p>
-          <p>CSS</p>
-          <p>Javascript</p>
-          <p>Node.js</p>
-          <p>REACT</p>
-          <p>Typescript</p>
-          <p>Figma</p>
-          <p>VsCode</p>
-        </div>
-        <div class="banner-two">
-          <p>placeholder</p>
-          <p>placeholder</p>
-          <p>placeholder</p>
-          <p>placeholder</p>
-          <p>placeholder</p>
-          <p>placeholder</p>
-          <p>placeholder</p>
-        </div>
-        <div class="banner-two-duplicate">
-          <p>placeholder</p>
-          <p>placeholder</p>
-          <p>placeholder</p>
-          <p>placeholder</p>
-          <p>placeholder</p>
-          <p>placeholder</p>
-          <p>placeholder</p>
+
+        <div class="icon-container">
+          <div class="banner-two">
+            <div class="icon-wrapper">
+              <img src="./assets/html-5-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="./assets/css-3-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="./assets/javascript-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="./assets/node-js-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img
+                src="./assets/react-javascript-js-framework-facebook-svgrepo-com.svg"
+                alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="./assets/typescript-official-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="./assets/figma-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="./assets/vscode-svgrepo-com.svg" alt="" />
+            </div>
+          </div>
+          <div class="banner-two-duplicate">
+            <div class="icon-wrapper">
+              <img src="./assets/html-5-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="./assets/css-3-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="./assets/javascript-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="./assets/node-js-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img
+                src="./assets/react-javascript-js-framework-facebook-svgrepo-com.svg"
+                alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="./assets/typescript-official-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="./assets/figma-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="./assets/vscode-svgrepo-com.svg" alt="" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -117,9 +161,9 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                 quasi laboriosam nam minus maiores tenetur ratione hic deserunt,
                 necessitatibus, quis ad enim voluptas, quo laudantium suscipit
-                maxime excepturi. Eaque, sequi.
+                maxime excepturi. Eaque, sequi. lorem50
               </p>
-              <button class="project-btn">View</button
+              <a href="" class="anchor-style">Github</a
               ><a href=""
                 >Repository<i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
@@ -135,7 +179,7 @@
                 amet, voluptatem quasi cum cumque inventore rem quam facilis
                 quis consequatur nostrum neque iure!
               </p>
-              <button class="project-btn">View</button
+              <a href="" class="anchor-style">Github</a
               ><a href=""
                 >Repository<i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
@@ -151,7 +195,7 @@
                 ab commodi modi quas odio, hic est? Nam natus necessitatibus
                 unde temporibus nulla alias?
               </p>
-              <button class="project-btn">View</button
+              <a href="" class="anchor-style">Github</a
               ><a href=""
                 >Repository<i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
@@ -167,7 +211,7 @@
                 consequuntur placeat? Ab vel facilis sequi accusamus omnis! Enim
                 obcaecati minima et veniam rerum!
               </p>
-              <button class="project-btn">View</button
+              <a href="" class="anchor-style">Github</a
               ><a href=""
                 >Repository<i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
@@ -183,7 +227,7 @@
                 quia minima, animi perferendis adipisci id facere vitae? Placeat
                 dolore ipsam corrupti eligendi quidem?
               </p>
-              <button class="project-btn">View</button
+              <a href="" class="anchor-style">Github</a
               ><a href=""
                 >Repository<i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
@@ -199,7 +243,7 @@
                 deserunt. Magnam iusto illum eos laborum obcaecati voluptatum,
                 repellat ex dolorum pariatur!
               </p>
-              <button class="project-btn">View</button
+              <a href="" class="anchor-style">Github</a
               ><a href=""
                 >Repository<i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
@@ -211,7 +255,7 @@
       <section class="contact-section">
         <div class="contact-me">
           <h5>Have a project lets talk</h5>
-          <button class="contact-btn btn-style">Submit</button>
+          <button id="contact-btn" class="btn-style">Submit</button>
         </div>
         <form>
           <input type="text" />
