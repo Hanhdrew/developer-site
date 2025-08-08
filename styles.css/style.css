@@ -74,7 +74,9 @@ a:hover {
   padding: var(--padding-small);
   border: 1px solid var(--clr-background-primary);
   border-radius: 3px;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 0 3px rgb(0, 0, 0);
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 }
@@ -173,18 +175,7 @@ nav ul {
   text-align: center;
   margin-top: 20px;
   position: relative;
-  width: max-content;
   align-self: center;
-}
-
-.hero-header h2::after {
-  content: "";
-  position: absolute;
-  left: -55%;
-  top: 50%;
-  height: 2px;
-  width: 50%;
-  background-color: var(--clr-btn-primary);
 }
 
 .hero-header span {
@@ -236,7 +227,7 @@ nav ul {
 }
 
 .img-wrapper::after {
-  filter: blur(5px);
+  filter: blur(10px);
 }
 
 .hero-header-btn-wrapper {
@@ -248,7 +239,7 @@ nav ul {
 
 /* banner section  */
 
-/* .banner-section {
+.banner-section {
   display: flex;
   overflow: hidden;
   width: 100%;
@@ -264,7 +255,7 @@ nav ul {
   display: inline-flex;
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 200%;
   position: relative;
 }
 
@@ -272,6 +263,8 @@ nav ul {
 .icon-container::after {
   content: "";
   position: absolute;
+  width: 100vw;
+  left: 0;
   inset: 0;
   z-index: 1;
   background: linear-gradient(
@@ -312,16 +305,16 @@ nav ul {
 .banner-two-duplicate {
   position: absolute;
   left: 100%;
-} 
+}
 
 .icon-wrapper {
   width: clamp(50px, 4vw, 100px);
   height: auto;
-} */
+}
 
 /* banner section number two  */
 
-.icon-wrapper {
+/* .icon-wrapper {
   width: clamp(50px, 4vw, 100px);
   height: auto;
 }
@@ -331,7 +324,6 @@ nav ul {
   flex-direction: column;
   border: 1px solid blue;
   padding: 10px;
-  /* overflow: hidden; */
   position: relative;
 }
 
@@ -368,7 +360,7 @@ nav ul {
 .icon-container {
   position: relative;
   left: -2000px;
-}
+} */
 
 /* about me section  */
 
