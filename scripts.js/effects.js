@@ -1,29 +1,3 @@
-// --- EmailJS Setup ---
-import emailjs from "emailjs-com";
-
-function setupEmailJS() {
-  emailjs.init("1bkOTscosxtKZemWs");
-
-  const form = document.getElementById("contact-form");
-
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-
-      emailjs
-        .sendForm("service_h8k2sjj", "template_cpdyblo", form)
-        .then(() => {
-          alert("Message sent successfully!");
-        })
-        .catch((error) => {
-          console.error("EmailJS error:", error);
-          alert("Failed to send message. Please try again.");
-        });
-    });
-  }
-}
-
-// --- Effects Setup ---
 function setupEffects() {
   const videoCards = document.querySelectorAll(".project-card-wrapper");
 
@@ -74,8 +48,6 @@ function setupEffects() {
   });
 }
 
-// --- Initialize Everything Once DOM is Ready ---
 document.addEventListener("DOMContentLoaded", () => {
-  setupEmailJS();
   setupEffects();
 });

@@ -36,7 +36,7 @@
           <p>Andrew</p>
           <h2>Fullstack Web Developer</h2>
           <div class="hero-header-btn-wrapper">
-            <button id="project-btn" class="btn-style">Quick Connect</button>
+            <a href="#contact-form" class="btn-style">Quick Connect</a>
             <button id="resume-btn" class="btn-style">My resume</button>
           </div>
         </div>
@@ -171,14 +171,11 @@
       </section>
 
       <section class="projects-section">
-        <h4>Projects</h4>
+        <h4>Featured Projects</h4>
 
         <div class="project-container">
           <div class="project-card-wrapper">
-            <div class="project-card">
-              <img src="./assets/ChatGPT Image Aug 3, 2025, 07_50_53 PM.png" />
-            </div>
-
+            <div class="project-card project-card-one"></div>
             <div class="project-card">
               <h5>Developer Site and Portfolio</h5>
               <div class="card-wrapper">
@@ -201,9 +198,7 @@
           </div>
 
           <div class="project-card-wrapper">
-            <div class="project-card">
-              <img src="./assets/ChatGPT Image Aug 3, 2025, 07_50_53 PM.png" />
-            </div>
+            <div class="project-card project-card-two"></div>
             <div class="project-card">
               <h5>Front Website</h5>
               <div class="card-wrapper"><span>HTML</span><span>CSS</span></div>
@@ -223,9 +218,7 @@
           </div>
 
           <div class="project-card-wrapper">
-            <div class="project-card">
-              <img src="./assets/ChatGPT Image Aug 3, 2025, 07_50_53 PM.png" />
-            </div>
+            <div class="project-card project-card-three"></div>
             <div class="project-card">
               <h5>Social Media Landing Page</h5>
               <div class="card-wrapper">
@@ -248,9 +241,7 @@
           </div>
 
           <div class="project-card-wrapper">
-            <div class="project-card">
-              <img src="./assets/ChatGPT Image Aug 3, 2025, 07_50_53 PM.png" />
-            </div>
+            <div class="project-card project-card-four"></div>
             <div class="project-card">
               <h5>Mood Journal API</h5>
               <div class="card-wrapper">
@@ -275,9 +266,7 @@
           </div>
 
           <div class="project-card-wrapper">
-            <div class="project-card">
-              <img src="./assets/ChatGPT Image Aug 3, 2025, 07_50_53 PM.png" />
-            </div>
+            <div class="project-card project-card-five"></div>
             <div class="project-card">
               <h5>Title here</h5>
               <div class="card-wrapper">
@@ -300,9 +289,7 @@
           </div>
 
           <div class="project-card-wrapper">
-            <div class="project-card">
-              <img src="./assets/ChatGPT Image Aug 3, 2025, 07_50_53 PM.png" />
-            </div>
+            <div class="project-card project-card-six"></div>
             <div class="project-card">
               <h5>Title here</h5>
               <div class="card-wrapper">
@@ -327,17 +314,51 @@
       </section>
 
       <section class="contact-section">
-        <form>
+        <form id="contact-form">
           <h5>Get Connected</h5>
-          <label for="first-name">First Name:</label>
-          <input type="text" id="first-name" name="first-name" />
-          <label for="last-name">Last Name:</label>
-          <input type="text" id="last-name" name="last-name" />
-          <label for="email">email:</label>
-          <input type="text" id="email" name="email" />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <button id="contact-btn" class="btn-style">Submit</button>
+
+          <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              autocomplete="given-name"
+              required />
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              autocomplete="family-name"
+              required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              autocomplete="off"
+              required></textarea>
+          </div>
+
+          <button type="submit" id="contact-btn" class="btn-style">
+            Submit
+          </button>
         </form>
       </section>
     </main>
@@ -351,6 +372,8 @@
         <i class="fa-brands fa-linkedin"></i>
       </p>
     </footer>
-    <script src="./scripts.js/script.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./scripts.js/email.js"></script>
+    <script src="./scripts.js/effects.js"></script>
   </body>
 </html>
